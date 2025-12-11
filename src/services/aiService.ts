@@ -39,7 +39,7 @@ Respond with this JSON structure:
   "reasoning": "brief explanation of why this category was chosen"
 }`;
 
-    const res = await fetch(`${OLLAMA_API}/api/generate`, {
+    const res = await fetch(OLLAMA_API, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ model: MODEL, prompt, temperature: 0.3 }),
