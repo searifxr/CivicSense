@@ -20,7 +20,7 @@ const VALID_CATEGORIES = [
 // Change this depending on environment
 // Local dev: http://localhost:11434
 // Ngrok tunnel: https://<your-tunnel>.ngrok-free.dev
-const OLLAMA_API = 'https://nonvicariously-overage-lacy.ngrok-free.dev';
+const OLLAMA_API = '/api/ai';
 const MODEL = 'phi3.5';
 
 export async function getAISuggestions(userDescription: string): Promise<AISuggestion | null> {
