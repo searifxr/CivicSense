@@ -10,6 +10,7 @@
     "lint": "eslint . --ext .ts,.tsx"
   },
   "dependencies": {
+    "@vercel/node": "^5.5.15",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
     "input-otp": "^1.4.2",
