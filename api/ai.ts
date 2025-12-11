@@ -4,7 +4,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
     const { userDescription } = req.body;
 
-    const response = await fetch('http://localhost:11434/api/generate', {
+    const response = await fetch('https://nonvicariously-overage-lacy.ngrok-free.dev', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
